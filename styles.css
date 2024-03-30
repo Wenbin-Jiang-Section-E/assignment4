@@ -1,0 +1,85 @@
+/* Custom CSS for Wine Tasting Event */
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("photos/wine-tasting.jpeg");
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 100px 0;
+}
+
+/* About, Schedule, Tickets Sections */
+
+.event-info {
+  margin-top: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.event-info h2 {
+  color: #8b4513;
+}
+
+/* Add animation and hover effect to images */
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  animation: shake 0.5s ease; /* Shake animation on hover */
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* tablet screens */
+@media (max-width: 1024px) {
+  #about,
+  #tickets,
+  #schedule,
+  .btn {
+    font-size: 14px;
+  }
+  .img-fluid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
